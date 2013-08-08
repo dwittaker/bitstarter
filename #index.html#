@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Duane's First Bitstarter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+<!--<link type="text/css" rel="stylesheet" href="http://ec2-54-218-10-49.us-west-2.compute.amazonaws.com/css/bootstrap-combinedno-iconsmin.css">	-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+
+
+<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+<!--<script src="http://ec2-54-218-10-49.us-west-2.compute.amazonaws.com:8080/js/bootstrap.js"></script>	-->
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  
+  	/* Large desktop */
+  	@media (min-width: 980px){
+  		body {
+  			padding-top: 60px;
+  		}
+  		.linediv-l {
+  			border-right: 1px white solid;
+  		}
+  		.linediv-r {
+  			border-left: 1px white solid;
+  		}
+  	
+  	}
+  	
+  	/* Landscape phones and down */
+  	@media (max-width: 480px){
+  		.copy {
+  			padding: 2.5% 10%;
+  		}
+  		.linediv-l {
+  			border-bottom: 1px white solid;
+  		}
+  		.linediv-r {
+  			border-top: 1px white solid;
+  		}
+  	
+  	}
+  	
+  	
+  	
+  	/* All form factors */
+  	
+    body {
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+	.heading, .subheading {
+		font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+		text-align: center;
+	}
+	p.lead {
+		padding-top: 1.5%;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	/* Video pitch and Action */
+	.pitch {
+		padding: 2.5% 0%;
+		}
+		
+	.order {
+		padding: 2% 0%;
+	}
+	.actions {
+		background-color: #343434;
+		padding: 3% 0%;
+	}
+	.video, .thermometer, .order, .social, .statistics {
+		text-align: center;
+	}
+	.statistics h3, .statistics p {
+		color: white;
+	}
+	
+	/* Marketing Copy and Footer */
+	.copy {
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		text-align: justify;
+	}
+	.asset {
+		padding: 2.5% 0%;
+	}
+	.footer {
+		color: #cccccc;
+		text-align: center;
+	}
+	.footer p {
+		font-size: 11px;
+	}
+	.footer a {
+		color: #ccccff;
+	}
+
+/* ORIGINAL
+    .container {
+    width: 960px;
+    }
+    p.lead {
+    padding-top: 15px;
+    }
+    .navigation, .pitch, .section1, .section2, .faq, .footer {
+    padding: 10px 0px 10px 0px;
+    }
+    .video, .thermometer, .order, .social {
+    border: 1px dotted;
+    text-align: center;
+    }
+    .video {
+    
+    height: 124px;
+    line-height: 123px;
+    }
+    .thermometer, .order, .social {
+
+    height: 40px;
+    line-height: 40px;
+    }
+    div.row {
+    border: 1px solid;
+    }
+*/
+
+
+.slideshow { height: 240px; width: 480px; margin: auto }
+.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+
+    </style>
+    
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button>
+				<a class="brand" href="#">uClash</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row-fluid heading">
+			<div class="span12">
+				<h1>uCLASH</h1>
+			</div>
+		</div>
+		<div class="row-fluid subheading">
+			<div class="span12">
+				<p class="lead">A test of your musical prowess.</p>
+			</div>
+		</div>
+		<div class="row-fluid pitch">
+			<div class="span5 offset video">
+						<div class="slideshow" style="position: relative;">
+		<img src="http://i.imgur.com/4nAxb61.png" alt="Youtube" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/rwwDnnR.jpg" alt="Worldwide audience" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<!--<img src="img/Intro3.jpg" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">-->
+		<img src="http://i.imgur.com/AIkmdE8.png" alt="Deejay" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<!--<img src="img/Intro5.png" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">-->
+		<img src="http://i.imgur.com/GZq6iBk.png" alt="Sound Clash" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+
+			</div>
+			</div>
+			
+			<div class="span5 offset1 actions">
+				<div class="span8 offset2"> 
+					<div class="statistics">
+						<div class="span4">
+							<div class="linediv-l">
+								<h3>0</h3> <p>backers</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-c">
+								<h3>$0</h3> <p>of $100,000</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-r">
+								<h3>30</h3> <p>days left</p>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="span10 offset1">
+					<div class="thermometer progress active">
+						<div class="bar bar-success" style="width: 0%;"></div>
+						<div class="bar bar-warning" style="width: 100%;"></div>						
+					</div>
+				</div>
+				<div class="span6 offset3 order">
+					<button class="btn btn-success btn-large">Preorder</button>
+				</div>
+				<div class="span8 offset2 social">
+					<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+					<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>					
+				</div>
+			</div>			
+		</div> <!--end of section before marketing copy -->
+		
+		<div class="row-fluid section1">
+			<div class="span5 offset asset">
+			<div class="slideshow" style="position: relative;">
+		<img src="http://i.imgur.com/BwPSqN7.png" alt="Music Buff" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/AkIqUPy.png" alt="Music Chick" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/VoUGQzU.png" alt="Music Collector" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+			</div>
+			</div>
+			<div class="span5 offset1 copy">
+				<p>
+
+Who do you think you are? What do you think you know? Is it good music? Prove it!
+<br><br>
+If you think you have what it takes to go head to head with musical masters (aka lovers) around the world, 
+then prove it!
+<br><br>
+Display your musical prowess to the world and let them decide...
+<br><br>
+SIGN UP NOW!
+
+				</p>
+			</div>
+		</div>
+		<div class="row-fluid section1">
+			<div class="span12"><br><br><hr></div>
+		</div>
+		
+		<div class="row-fluid section2">
+			<div class="span5 offset copy copy-right">
+				<p>
+		
+Dancehall is a genre of Jamaican popular music that originated in the late 1970s and can be regarded as a spin-off of Reggae. 
+It can be exciting, it can be heated, it can be violent, it can be sexual, it can be fun. Always lyrically magical.
+<br>
+Mega-Wattage sound systems have blasted the electronically enhanced "riddims" and tongue-twisting lyrics of Jamaica's 
+dancehall DJs across the globe. Of course, in such a competitive world everyone wants to be Number one and so the Sound Clash 
+was born. Competitors from Jamaica, New York, Japan, London, Germany and even Egypt regularly take part in 'World Clashes'.  
+
+        
+				</p>
+			</div>
+			<div class="span5 offset1 asset">
+			<div class="slideshow" style="position: relative;">
+		<img src="http://i.imgur.com/pVaqc7T.png" alt="Sound System Selector" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/yCw7Uj0.png" alt="Old Sound System" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/LBWDz0n.png" alt="Selector Tony Matterhorn" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/OJJzjtx.png" alt="International Sound System" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/EHYKNT8.png" alt="Sound Clash Excitement" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/dzLrmt9.png" alt="Blaze Fire" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/sVFsPvS.png" alt="Sound Clash Crowd 1" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/YCIabaH.png" alt="Sound Clash Crowd 2" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/DU1EYWA.png" alt="International Clash" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/esDc6zx.png" alt="Sound Clash Winners" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+
+
+			</div>
+
+			</div>
+
+		</div>
+		<div class="row-fluid section1">
+			<div class="span12"><br><br><hr></div>
+		</div>
+		
+		<div class="row-fluid section1">
+			<div class="span5 asset">
+<iframe width="480" height="300" src="//www.youtube.com/embed/videoseries?list=PL4nA3KdaqSMw8MBsICT3oGU9-HIvTmMfk" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="span5 offset2 copy">
+				<p>
+Sound Clashes are typically reserved for musical professionals and in front of large stage show crowds. 
+Sound system DJ's battle against each other musically to become the 'Champion Sound', always determined 
+by the Boos or Yays ('forwards') of the frenzied fans (and even more obviously, the throwing of bottles
+ at crappy competitors).
+ 
+ <br><BR>
+ VIDEO IS NSF WORK OR CHILDREN - LOTS OF EXPLETIVES
+
+				</p>
+			</div>
+		</div>
+				<div class="row-fluid section1">
+			<div class="span12"><br><br><hr></div>
+		</div>
+				<div class="row-fluid section2">
+			<div class="span5  copy copy-right">
+				<p>
+		
+I'd like to bring this experience into a more casual environment, enabling even the everyday music lover 
+to prove his/her musical might, but on a global scale. Right from their couch.
+<br>
+
+Simply put, the platform will allow players around the world to compete by playing songs of their own selection. 
+Winners and ratings will be 'crowd-sourced' from live listeners. The players stand to gain popularity, ratings and 
+champion status. Listeners will be treated to hit after hit of their favourite music. Gratitude would only have to 
+be shown through a vote.
+        
+				</p>
+			</div>
+			<div class="span5 offset1 asset">
+				<div class="slideshow" style="position: relative;">
+		<img src="http://i.imgur.com/rjift2U.png" alt="Casual Music User on Laptop" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/kVhLcgw.png" alt="Casual African-American Music Lover on Laptop" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/AcmDVm5.png" alt="Casual African-American Music Lover on Laptop" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+			</div>
+			</div>
+
+		</div>
+		<div class="row-fluid section1">
+			<div class="span12"><br><br><hr></div>
+		</div>
+
+		<div class="row-fluid section1">
+			<div class="span5 offset asset">
+				<div class="slideshow" style="position: relative;">
+		<img src="http://i.imgur.com/XGPqn77.png" alt="Show me the Money!" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/hpwJhBC.png" alt="Bucket of Money"  width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+		<img src="http://i.imgur.com/OAGeHxz.png" alt="Music is like a drug" width="480" height="300" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 480px; height: 300px;">
+			</div>
+			</div>
+			<div class="span5 offset1 copy">
+				<p>
+
+Various avenues exist for monetization, including the tiered enablement of features for both players and listeners. 
+Players will gain abilities to play longer clips, sound effects, branding jingles and the sort.
+<br>
+Listeners will not be restricted in any way whatsoever, as they are the source of the platform's success. Players need listeners.
+<br>
+Third parties may benefit from audio and graphical advertisements.
+
+				</p>
+			</div>
+		</div>
+		
+	<br><br><br><br>		
+		
+		<div class="row-fluid faq">
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+            	<div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+					What is Reggae?
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                  <div class="accordion-inner">
+					Get your answer here
+                    <br>
+                    <a href="http://en.wikipedia.org/wiki/Reggae" target="_blank">All about Reggae</a>
+                    </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					What is Dancehall?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+                  <div class="accordion-inner">
+					Get your answer here
+                    <br>
+                    <a href="http://en.wikipedia.org/wiki/Dancehall" target="_blank">All about Dancehall</a>
+                    </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                    What is a Sound Clash?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+                  <div class="accordion-inner">
+                    It's a competition where Sound Systems compete to see who can play the best music.
+                    <br>
+                    <a href="http://en.wikipedia.org/wiki/Sound_clash" target="_blank">Sound Clash Wiki</a>
+                    </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                    Who can Enter to Display their Musical PROWESS?
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse" style="height: 0px;">
+                  <div class="accordion-inner">
+					ANYONE
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+		<div class="row-fluid footer">
+			<div class="span12">
+				<p>
+					This work is licensed under the 
+					<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC 
+					By-SA 3.0
+					</a>, without all the cruft that would otherwise be put at the bottom of the page.
+				</p>
+				</p>
+			</div>
+		</div>
+		
+		
+	</div> 
+	
+</body>
+</html>
