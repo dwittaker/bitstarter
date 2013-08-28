@@ -3,7 +3,8 @@
 .env
 
 # npm packages
-node_modules
+ node_modules
+# node modules has been included to try and fix problem 
 
 # Mac
 .DS_Store
